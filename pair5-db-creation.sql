@@ -83,12 +83,36 @@ INSERT INTO Clientes (nombre, num_telefono, email, direccion, ciudad, provincia,
 	VALUES ("Monica", "1234567289", "monica@email.com", "Calle Felicidad", "Móstoles", "Madrid", 28176),
     ("Carmen", "298463759", "carmen@email.com", "Calle del Color", "Vigo", "Pontevedra", 23456);
 
-INSERT INTO Facturas (id_factura, numero_factura, fecha, id_zapatilla, id_empleado, id_cliente, total)
-	VALUES ("123", "2001-12-11", 1, 2. 1, 54.98),
-    ("1234", "2005-05-23", 1, 1, 3, 89.91),
-    ("12345", "2015-09-18, 2, 3, 3, 76.23);
+INSERT INTO Facturas (numero_factura, fecha, id_zapatilla, id_empleado, id_cliente, Total)
+	VALUES ("123", "2001-12-11", 1, 2, 1, 54.98),
+    ("1234", "2005-05-23", 1, 1, 2, 89.91),
+    ("12345", "2015-09-18", 2, 3, 2, 76.23);
+  
+ UPDATE Zapatillas 
+ SET color = "Amarillas"
+ WHERE color = "Rosas";
+
+UPDATE Empleados
+SET tienda = "A Coruña"
+WHERE nombre = "Laura";
+
+UPDATE Clientes
+SET num_telefono = "12345678"
+WHERE nombre = "Monica";
     
+UPDATE Facturas
+SET total = 89.91
+WHERE id_factura = 2;
 
-	
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
  
